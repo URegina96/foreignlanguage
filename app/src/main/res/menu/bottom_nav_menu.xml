@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/lessonsFragment"
+        android:icon="@drawable/ic_lessons"
+        android:title="Уроки" />
+    <item
+        android:id="@+id/exercisesFragment"
+        android:icon="@drawable/ic_exercises"
+        android:title="Упражнения" />
+    <item
+        android:id="@+id/dictionaryFragment"
+        android:icon="@drawable/ic_dictionary"
+        android:title="Словарь" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Настройки" />
+</menu>
