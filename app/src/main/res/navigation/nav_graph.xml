@@ -9,21 +9,23 @@
         android:name="com.example.foreignlanguage.LessonsFragment"
         android:label="Уроки">
         <action
-            android:id="@+id/action_lessonsFragment_to_exercisesFragment"
-            app:destination="@id/exercisesFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/exercisesFragment"
-        android:name="com.example.foreignlanguage.ExercisesFragment"
-        android:label="Упражнения">
+            android:id="@+id/action_lessonsFragment_to_englishLessonsFragment"
+            app:destination="@id/englishLessonsFragment" />
         <action
-            android:id="@+id/action_exercisesFragment_to_dictionaryFragment"
-            app:destination="@id/dictionaryFragment" />
+            android:id="@+id/action_lessonsFragment_to_japanesLessonsFragment"
+            app:destination="@id/japanesLessonsFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/dictionaryFragment"
-        android:name="com.example.foreignlanguage.DictionaryFragment"
-        android:label="Словарь" />
+        android:id="@+id/englishLessonsFragment"
+        android:name="com.example.foreignlanguage.EnglishLessonsFragment"
+        android:label="EnglishLessonsFragment" />
+    <fragment
+        android:id="@+id/japanesLessonsFragment"
+        android:name="com.example.foreignlanguage.JapanesLessonsFragment"
+        android:label="JapanesLessonsFragment" />
+
+
+
+
 </navigation>
