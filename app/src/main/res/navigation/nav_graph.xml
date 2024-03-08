@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/lessonsFragment">
 
     <fragment
         android:id="@+id/lessonsFragment"
-        android:name="com.example.foreignlanguage.LessonsFragment"
+        android:name="com.example.foreignlanguage.lessons.LessonsFragment"
         android:label="Уроки">
         <action
             android:id="@+id/action_lessonsFragment_to_englishLessonsFragment"
@@ -18,14 +19,31 @@
 
     <fragment
         android:id="@+id/englishLessonsFragment"
-        android:name="com.example.foreignlanguage.EnglishLessonsFragment"
+        android:name="com.example.foreignlanguage.lessons.EnglishLessonsFragment"
         android:label="EnglishLessonsFragment" />
     <fragment
         android:id="@+id/japanesLessonsFragment"
-        android:name="com.example.foreignlanguage.JapanesLessonsFragment"
+        android:name="com.example.foreignlanguage.lessons.JapanesLessonsFragment"
         android:label="JapanesLessonsFragment" />
-
-
-
-
+    <fragment
+        android:id="@+id/exercisesFragment2"
+        android:name="com.example.foreignlanguage.exercises.ExercisesFragment"
+        android:label="ExercisesFragment" >
+        <action
+            android:id="@+id/action_exercisesFragment2_to_japaneseExercisesFragment"
+            app:destination="@id/japaneseExercisesFragment" />
+        <action
+            android:id="@+id/action_exercisesFragment2_to_englishExercisesFragment"
+            app:destination="@id/englishExercisesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/japaneseExercisesFragment"
+        android:name="com.example.foreignlanguage.exercises.JapaneseExercisesFragment"
+        android:label="fragment_japanese_exercises"
+        tools:layout="@layout/fragment_japanese_exercises" />
+    <fragment
+        android:id="@+id/englishExercisesFragment"
+        android:name="com.example.foreignlanguage.exercises.EnglishExercisesFragment"
+        android:label="fragment_english_exercises"
+        tools:layout="@layout/fragment_english_exercises" />
 </navigation>
