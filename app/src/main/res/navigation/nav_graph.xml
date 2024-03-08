@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/lessonsFragment">
+
+    <fragment
+        android:id="@+id/lessonsFragment"
+        android:name="com.example.foreignlanguage.LessonsFragment"
+        android:label="Уроки">
+        <action
+            android:id="@+id/action_lessonsFragment_to_exercisesFragment"
+            app:destination="@id/exercisesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exercisesFragment"
+        android:name="com.example.foreignlanguage.ExercisesFragment"
+        android:label="Упражнения">
+        <action
+            android:id="@+id/action_exercisesFragment_to_dictionaryFragment"
+            app:destination="@id/dictionaryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dictionaryFragment"
+        android:name="com.example.foreignlanguage.DictionaryFragment"
+        android:label="Словарь" />
+</navigation>
