@@ -22,10 +22,10 @@ class ExercisesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 //         Добавь обработчик нажатия для перехода к разделу "Упражнения"
         view.findViewById<Button>(R.id.buttonEnglishExercisesFragment).setOnClickListener {
-            findNavController().navigate(R.id.action_exercisesFragment2_to_englishExercisesFragment)
+            findNavController().navigate(R.id.action_exercisesFragment_to_englishExercisesFragment)
         }
         view.findViewById<Button>(R.id.buttonJapaneseExercisesFragment).setOnClickListener {
-            findNavController().navigate(R.id.action_exercisesFragment2_to_japaneseExercisesFragment)
+            findNavController().navigate(R.id.action_exercisesFragment_to_japaneseExercisesFragment)
         }
     }
 }

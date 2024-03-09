@@ -2,4 +2,11 @@
     <string name="app_name">Foreignlanguage</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lessonstext">Дорогие ученики, сегодня мы отправимся в увлекательное путешествие в мир иностранного языка! Ваша задача - изучить и запомнить новые слова, чтобы пополнить свой словарный запас </string>
+    <string name="exercisestext">
+        Задача:
+        1 -> Изучите слова из словаря и попробуйте составить с ними предложения на испанском языке
+        2 -> Придумайте короткий диалог, используя как можно больше изученных слов
+    </string>
+    <string name="exercises">к уроку</string>
 </resources>

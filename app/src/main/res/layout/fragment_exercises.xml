@@ -25,12 +25,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="189dp"
-        android:layout_height="165dp"
+        android:layout_width="214dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="36dp"
         android:src="@drawable/ic_exercises"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <Button
         android:id="@+id/buttonEnglishExercisesFragment"
         android:layout_width="205dp"
