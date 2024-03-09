@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DictionaryFragment">
+    tools:context=".lessons.LessonsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textViewDictionaryFragment"
+        android:layout_width="334dp"
+        android:layout_height="304dp"
+        android:gravity="center"
+        android:text="Выберите язык словаря"
+        android:textColor="@color/text"
+        android:textSize="27sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/imageViewDictionaryFragment"
+        android:layout_width="189dp"
+        android:layout_height="165dp"
+        android:src="@drawable/ic_dictionary"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEnglishDictionaryFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDictionaryFragment"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <Button
+        android:id="@+id/buttonEnglishDictionaryFragment"
+        android:layout_width="205dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="12dp"
+        android:text="English"
+        app:layout_constraintBottom_toTopOf="@+id/buttonJapaneseDictionaryFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonJapaneseDictionaryFragment"
+        android:layout_width="199dp"
+        android:layout_height="55dp"
+        android:text="Japanese"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
