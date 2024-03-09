@@ -1,4 +1,4 @@
-package com.example.foreignlanguage
+package com.example.foreignlanguage.lessons
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import com.example.foreignlanguage.R
 
 class LessonsFragment : Fragment() {
     override fun onCreateView(
