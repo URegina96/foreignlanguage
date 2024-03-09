@@ -26,14 +26,14 @@
         android:name="com.example.foreignlanguage.lessons.JapanesLessonsFragment"
         android:label="JapanesLessonsFragment" />
     <fragment
-        android:id="@+id/exercisesFragment2"
+        android:id="@+id/exercisesFragment"
         android:name="com.example.foreignlanguage.exercises.ExercisesFragment"
         android:label="ExercisesFragment" >
         <action
-            android:id="@+id/action_exercisesFragment2_to_japaneseExercisesFragment"
+            android:id="@+id/action_exercisesFragment_to_japaneseExercisesFragment"
             app:destination="@id/japaneseExercisesFragment" />
         <action
-            android:id="@+id/action_exercisesFragment2_to_englishExercisesFragment"
+            android:id="@+id/action_exercisesFragment_to_englishExercisesFragment"
             app:destination="@id/englishExercisesFragment" />
     </fragment>
     <fragment
@@ -46,4 +46,31 @@
         android:name="com.example.foreignlanguage.exercises.EnglishExercisesFragment"
         android:label="fragment_english_exercises"
         tools:layout="@layout/fragment_english_exercises" />
+    <fragment
+        android:id="@+id/dictionaryFragment"
+        android:name="com.example.foreignlanguage.dictionary.DictionaryFragment"
+        android:label="fragment_dictionary"
+        tools:layout="@layout/fragment_dictionary" >
+        <action
+            android:id="@+id/action_dictionaryFragment_to_englishDictionaryFragment"
+            app:destination="@id/englishDictionaryFragment" />
+        <action
+            android:id="@+id/action_dictionaryFragment_to_japaneseDictionaryFragment"
+            app:destination="@id/japaneseDictionaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.foreignlanguage.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/englishDictionaryFragment"
+        android:name="com.example.foreignlanguage.dictionary.EnglishDictionaryFragment"
+        android:label="fragment_english_dictionary"
+        tools:layout="@layout/fragment_english_dictionary" />
+    <fragment
+        android:id="@+id/japaneseDictionaryFragment"
+        android:name="com.example.foreignlanguage.dictionary.JapaneseDictionaryFragment"
+        android:label="fragment_japanese_dictionary"
+        tools:layout="@layout/fragment_japanese_dictionary" />
 </navigation>
